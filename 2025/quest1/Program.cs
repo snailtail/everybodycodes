@@ -2,7 +2,7 @@
 
 List<string> names;
 
-int[] parts = {3};
+int[] parts = {1,2,3};
 int pos;
 foreach (var part in parts)
 {
@@ -23,7 +23,8 @@ foreach (var part in parts)
         }
         if(part == 3)
         {
-            Console.WriteLine($"Instruction {instruction} leads to {swapNameAtPos(instruction)}");
+            swapNameAtPos(instruction);
+            pos = 0;
         }
     }
 
